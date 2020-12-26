@@ -205,3 +205,53 @@ print("x")
 print(obje)
 
 # https://ja.wikibooks.org/wiki/Python/ファイルの書き込みと読み込み
+
+# https://ja.wikibooks.org/wiki/Python/GUIアプリの作成
+import tkinter
+
+dummy1 = tkinter.Tk()
+
+dummy1.mainloop()
+
+# coding: utf-8
+import tkinter
+
+dummy1 = tkinter.Tk()
+
+
+# ここに設定を書く
+dummy1.title('Hello 日本語')
+dummy1.geometry('300x400')
+
+dummy1.mainloop()
+
+# coding: utf-8
+import tkinter
+
+dummy1 = tkinter.Tk()
+
+dummy1.title('Hello Window')
+dummy1.geometry('300x400')
+
+# キャンバスの設定と貼り付け
+canvasD = tkinter.Canvas(dummy1, width=100, height = 150, bg = "blue")
+canvasD.place(x=0, y=0)
+
+dummy1.mainloop()
+
+# coding: utf-8
+import tkinter
+
+dummy1 = tkinter.Tk()
+
+dummy1.title('Hello Window')
+dummy1.geometry('800x900')
+
+canvasDummy = tkinter.Canvas(dummy1, width = 600, height = 750, bg = "blue")
+canvasDummy.place(x=0, y=0)
+
+# 画像の設定と貼り付け
+imgD = tkinter.PhotoImage(file="the-earth-1179212_1280.png")
+canvasDummy.create_image(0, 0, image=imgD)
+
+dummy1.mainloop()
