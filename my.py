@@ -118,3 +118,90 @@ if (x > 2) & (x < 5) :
 else:
     print("そうでない場合。")
 print("プログラムが終了しました。")
+
+for i in range(5):
+    print(i)
+
+
+i=2
+print("ブロックよりも前のiは",i)
+for i in range(5):
+    print(i)
+print("ブロックの外側のiは",i)
+
+# i = "b"
+# while i != "q":
+#     print("入力した文字を3個、ならべるよ。（終了したい場合はqを入力）")
+#     i = input()
+#     print(3*i)
+
+# https://ja.wikibooks.org/wiki/Python/リスト
+matome = [10 ,"asdf" ,30]
+print(matome)
+
+matome = [10 ,"asdf" ,30]
+print(matome[1])
+
+matome = [10 ,"asdf" ,30]
+matome[0] = 4
+print (matome)
+
+matome = [10 ,"asdf" ,30]
+print(matome[0] + matome[2])
+
+matome = ["aaa" ,"bb" ,"cccc"]
+matome[0] = 4
+print(matome)
+
+# 人名リスト
+jinmei = ["yamada" ,"sato" ,"inoue"] 
+
+for i in jinmei:
+    print(i)
+
+matome = ["aaa" ,"bb" ,"cccc"]
+matome.append("d")
+print(matome)
+
+matome = ["aaa" ,"bb" ,"cccc"]
+matome.pop()
+print(matome)
+
+matome = ["aaa" ,"bb" ,"cccc"]
+matome.pop()
+matome.pop()
+print(matome)
+
+matome = [-7 , -2, 5]
+
+print(matome)
+# 絶対値をabsで得る
+obje= list(map(abs, matome) )
+
+print(obje)
+
+matome = [-7 , -2, 5]
+
+# +3するだけの処置
+def kansu(a):
+    return a+3
+
+print(matome)
+obje= list(map(kansu, matome) )
+print(obje)
+
+matome = [5 , 2, 8, 6, 1 ]
+
+# 3以上の要素を抽出
+obje= list(filter(lambda x:(x >= 3)  , matome) )
+
+print(obje)
+
+matome = [5 , 2, 8, 6, 1 ]
+
+# 3以上の要素を抽出
+obje= list(map(lambda x:x if x % 2 == 0 else "奇数です" , matome ))
+print("x")
+print(obje)
+
+# https://ja.wikibooks.org/wiki/Python/ファイルの書き込みと読み込み
